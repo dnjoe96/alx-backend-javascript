@@ -6,7 +6,7 @@ export default class HolbertonCourse {
   }
 
   set name(name) {
-    if (typeof name !== 'string') throw 'Not a string';
+    if (typeof name !== 'string') throw new TypeError('Not a string');
     this._name = name;
   }
 
@@ -15,7 +15,7 @@ export default class HolbertonCourse {
   }
 
   set length(length) {
-    if (typeof length !== 'number') throw 'Not a number';
+    if (typeof length !== 'number') throw new TypeError('Not a number');
     this._length = length;
   }
 
@@ -24,7 +24,7 @@ export default class HolbertonCourse {
   }
 
   set students(students) {
-    if (typeof students !== 'object') throw 'Not an object';
+    if (typeof students !== 'object') throw new TypeError('Not an object');
     this._students = students;
   }
 
