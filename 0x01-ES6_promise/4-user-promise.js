@@ -12,6 +12,5 @@ export default function signUpUser(firstName, lastName) {
     resolve({ firstname: firstName, lastName });
   });
 
-  return promise.then((obj) => { console.log(obj); });
-  // return resp;
+  return promise;
 }
