@@ -9,7 +9,7 @@
 
 export default function signUpUser(firstName, lastName) {
   const promise = new Promise((resolve) => {
-    resolve({ firstname: firstName, lastName });
+    resolve({ firstName, lastName });
   });
 
   return promise;
