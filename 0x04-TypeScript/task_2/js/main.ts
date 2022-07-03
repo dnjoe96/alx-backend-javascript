@@ -14,6 +14,9 @@ interface TeacherInterface {
 // End of interfaces
 
 class Director implements DirectorInterface {
+  getCoffeeBreak(): string {
+    throw new Error("Method not implemented.");
+  }
 	workFromHome() {
 		return 'Working from home';
 	}
