@@ -16,7 +16,7 @@ describe('Hooks', function () {
     spy_console.restore();
   });
 
-  it('logs correctly with 100, 20', () => {    sendPaymentRequestToApi(100, 20);
+  it('logs correctly with 100, 20', () => {
     sendPaymentRequestToApi(100, 20);
 
     expect(spy_console.calledOnceWithExactly('The total is: 120')).to.be.true;
